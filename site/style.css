@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale= 1">
-<title>My first site page!</title>
-<link rel="stylesheet" href="style.css">
-<style>
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -65,6 +57,10 @@ row {
   width: 100%;
 }
  @media (min-width: 992px) and (max-width: 1199px) {
+  .innerdiv {
+    float: left;
+    border: 1px solid black;
+  }
     #first {
       width: 32%;
 
@@ -78,17 +74,18 @@ row {
  	
  	}
  @media (min-width: 768px) and (max-width: 991px){
+  .innerdiv {
+    float: left;
+    border: 1px solid black;
+  }
     #first {
-      float: left;
       width: 50%;
     }
     #second {
-      float: left;
       width: 50%;
     }
     #third {
-      clear: left;
-      width: 100%;
+      width: 50%;
     }
 
  }
@@ -108,29 +105,3 @@ row {
     }
 
  }
-</style>
-</head>
-<body>
-<h1>Our Menu</h1>
-<div id="container">
-  <div id="first" class="innerDiv First">
-    <p>The best Sunday lunch!</p>
-    <div id="headerItem" class="headerItem">
-      <p>Chicken</p>
-    </div>
-  </div>
-  <div id="second" class="innerDiv Second">
-    <p>Do not hasitated to order it! It is vey delicious!</p>
-    <div id="headerItem" class="headerItem">
-      <p>Pork chops</p>
-    </div>
-  </div>
-	<div id="third" class="innerDiv Third">
-    <p>Not just for vegetarian, but also to people who lead a healthy stile of life!</p>
-   <div id="headerItem" class="headerItem">
-     <p>Fish</p>
-   </div> 
-  </div>
-</div>
-</body>
-</html>
