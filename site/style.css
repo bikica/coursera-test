@@ -1,107 +1,97 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-h1{
-	margin-bottom: 15px;
-  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   background-color: white;
+  }
+h1{
+  margin-bottom: 15px;
+  text-align: center;
 }
-div#container {
-	background-color:#00FFFF;
-  width:100%;
-  min-height: 1000px; 
+div#container{
+	width: 100%;
+	background-color: #00FFFF;
+	min-height: 1000px;
 }
-div.innerDiv{
-    position: relative;
-    float: left;
-    width: 32%;
-    height: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
+div.Innerdiv{
+	width: 33%;
+	height: 100px;
+	float: left;
+	position: relative;
+	margin-left: 3px;
+	margin-bottom: 10px;
+	border: 1px solid black;
 }
-div.First{
-  background-color: pink;
+div#box1{
+	background-color: pink;
 }
-div.Second{
-  background-color: blue;
+div#box2{
+	background-color: blue;
 }
-div.Third{
-  background-color: yellow;
+div#box3{
+	background-color: yellow;
 }
-div.headerItem{
-  width: 100px;
-  height: 45px;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+div.menu{
+	width: 100px;
+	height: 45px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: -webkit-center;
 }
-div.innerDiv p{
-    word-break: break-word;
-    padding-top: 56px;
-}
-div.headerItem p{
-  padding: 5px;
-}
-
 p{
-  font-family: Helvetica;
-  color: black;
+	font-family: Helvetica;
+  	color: black;
+  	padding-top: 65px;
+  	margin-left: 10px; 
 }
-row {
+#container {
   width: 100%;
 }
- @media (min-width: 992px) and (max-width: 1199px) {
-  .innerdiv {
-    float: left;
-    border: 1px solid black;
-  }
-    #first {
-      width: 32%;
-
-    }
-    #second {
-      width: 32%;
-    }
-    #third {
-      width: 32%;
-    }
- 	
- 	}
- @media (min-width: 768px) and (max-width: 991px){
-  .innerdiv {
-    float: left;
-    border: 1px solid black;
-  }
-    #first {
-      width: 50%;
-    }
-    #second {
-      width: 50%;
-    }
-    #third {
-      width: 50%;
-    }
-
+@media (min-width: 992px) and (max-width: 1199px) {
+ #box1 {
+ 	width: 33%;
  }
- @media (max-width: 767px) {
-  .innerdiv {
-    float: left;
-    border: 1px solid black;
-  }
-  #first {
-      width: 90%;
-    }
-    #second {
-      width: 90%;
-    }
-    #third {
-      width: 90%;
-    }
-
+ #box2 {
+ 	width: 33%;
  }
+ #box3{
+ 	width: 33%;
+ }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.Innerdiv {
+	float: left;	
+	}
+	#box1 {
+		width: 50%;
+		
+	}
+	#box2 {
+		width: 49%;
+		
+
+	}
+	#box3 {
+		width: 99%;
+	}
+}
+@media (max-width: 767px) {
+	.Innerdiv {
+		float: left;
+		border: 1px solid black;
+	}
+	#box1 {
+		width: 90%;
+	}
+	#box2 {
+		width: 90%;
+	}
+	#box3 {
+		width: 90%;
+	}
+}
